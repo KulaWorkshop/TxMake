@@ -10,7 +10,9 @@ A toolkit that allows for the extraction and creation of Kula texture files:
 
 ## Usage
 
-Video tutorial coming soon.
+This toolkit requires the Microsoft Runtime Redistributable to be installed, which can be installed [here](https://aka.ms/vs/17/release/vc_redist.x64.exe). If you use emulators like Duckstation, you likely already have this installed.
+
+Video tutorial **coming soon!**
 
 ## Building
 
