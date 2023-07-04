@@ -10,19 +10,13 @@ A toolkit that allows for the extraction and creation of Kula texture files:
 
 ## Usage
 
----
-
 Video tutorial coming soon.
 
 ## Building
 
----
-
 TxMake uses [CMake](https://cmake.org/) for building and compiling the binaries.
 
 ## Libraries
-
----
 
 TxMake uses **4** libraries which can be seen below:
 
@@ -34,8 +28,6 @@ TxMake uses **4** libraries which can be seen below:
 **GHC and toml11** have been added to the repository as git submodules, since their usage are only header files. I _tried_ to add **FreeImage and libimagequant** as a CMake integration for easier usage, but I was unsuccessful. Thus, I've added the pre-compiled binaries for them inside of the `lib` folder.
 
 ## Changelog
-
----
 
 **v1.0-beta.1**
 
