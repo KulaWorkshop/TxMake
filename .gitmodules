@@ -1,0 +1,6 @@
+[submodule "toml"]
+	path = toml
+	url = https://github.com/ToruNiina/toml11.git
+[submodule "ghc"]
+	path = ghc
+	url = https://github.com/gulrak/filesystem.git

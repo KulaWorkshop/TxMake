@@ -1,0 +1,51 @@
+# Example TOML configuration file for TXMAKE
+# Paths are relative to where the config is located
+
+
+# Adjust the Red, Green, Blue (RGB) channels of models and blocks.
+[color-adjust]
+# Dependent on which side the model is on
+modelDark =   [-2048, -2048, -2048]
+modelNormal = [0, 0, 0]
+modelLight =  [2048, 2048, 2048]
+
+# Dependent on which direction the player is facing
+blockForward  = [0, 0, 0]
+blockBackward = [0, 0, 0]
+blockUp       = [0, 0, 0]
+blockDown     = [0, 0, 0]
+blockLeft     = [0, 0, 0]
+blockRight    = [0, 0, 0]
+
+# How the sun casts onto the levels in the theme. Example-- if the sun is in front,
+# then the front of the blocks will be light and the back of the blocks will be dark.
+[lighting]
+front  = "light"
+back   = "dark"
+top    = "normal"
+bottom = "normal"
+left   = "normal"
+right  = "normal"
+
+[other]
+randomTileRotation = false
+
+# Paths to skybox and tileset textures
+[textures]
+skybox     = "skybox.png"
+tileset-64 = "tileset-64.png"
+tileset-32 = "tileset-32.png"
+tileset-16 = "tileset-16.png"
+tileset-8  = "tileset-8.png"
+
+# Paths to 64x64 tileset palettes
+[palettes-64]
+normal = "palette-64.png"
+light  = "palette-64.light.png"
+dark   = "palette-64.dark.png"
+
+# Paths to mip-step tileset palettes (32x32, 16x16, 8x8)
+[palettes-mip]
+normal = "palette-mip.png"
+light  = "palette-mip.light.png"
+dark   = "palette-mip.dark.png"
