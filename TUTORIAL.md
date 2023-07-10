@@ -29,20 +29,20 @@ Replace `tileset.png` and `space` with the **input** path of your tileset image,
 
 ![Screenshot 3](/.github/screenshot-3.jpg?raw=true)
 
--   `tileset-64.png` - Our 64x64 that has been automatically [quantized]().
+-   `tileset-64.png` - Our 64x64 that has been automatically [quantized](<https://en.wikipedia.org/wiki/Quantization_(image_processing)>).
 -   `tileset-32.png` - A 32x32 tileset image that has been automatically generated.
 -   `tileset-16.png` - A 16x16 tileset image that has been automatically generated.
 -   `tileset-8.png` - An 8x8 tileset image that has been automatically generated.
--   `palette-64.png` - A palette image for the 64x64 that has been automatically generated.
--   `palette-64-light.png` - A light-palette image for the 64x64 that has been automatically generated.
--   `palette-64-dark.png` - A dark-palette image for the 64x64 that has been automatically generated.
+-   `palette-64.png` - A palette image for the 64x64 tileset that has been automatically generated.
+-   `palette-64.light.png` - A light-palette image for the 64x64 tileset that has been automatically generated.
+-   `palette-64.dark.png` - A dark-palette image for the 64x64 tileset that has been automatically generated.
 -   `palette-mip.png` - A palette image for the mip tilesets that has been automatically generated.
--   `palette-mip-light.png` - A light-palette image for the mip tilesets that has been automatically generated.
--   `palette-mip-dark.png` - A dark-palette image for the mip tilesets that has been automatically generated.
+-   `palette-mip.light.png` - A light-palette image for the mip tilesets that has been automatically generated.
+-   `palette-mip.dark.png` - A dark-palette image for the mip tilesets that has been automatically generated.
 
 The 32x32, 16x16, and 8x8 are auto generated smaller versions of your 64x64 tileset. These are known as [MIP steps or MIP maps](https://en.wikipedia.org/wiki/Mipmap), and are used by the game as an optimization feature.
 
-You'll notice that the **dark and light** versions of the palettes that were generated look the exact same. Open your prefered image editing software, and darken / lighten the dark / light versions of the palettes. Once you've edited the lighter and darker versions of the palettes, your folder should look like this:
+You'll notice that the **dark and light** versions of the palettes that were generated look the exact same. Open your preferred image editing software, and darken / lighten the dark / light versions of the palettes. Once you've edited the lighter and darker versions of the palettes, your folder should look like this:
 
 ![Screenshot 4](/.github/screenshot-4.jpg?raw=true)
 _Look closely at the darker and lighter versions of the palettes._
@@ -54,7 +54,7 @@ Now that our compatible texture images have been generated, copy the `txtemplate
 This config file will tell the `txmake` tool the paths to all of our texture images and the options for our theme. If you've never had experience editing .TOML files, they're kind of like .INI files. Here's an excerpt towards the end of the config file:
 
 ```toml
-...
+#...
 
 # Paths to skybox and tileset textures
 [textures]
