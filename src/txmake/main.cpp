@@ -146,7 +146,7 @@ bool createOutput(ghc::filesystem::path outputPath) {
 		output << input.rdbuf();
 	}
 	else {
-		printf("Damn.\n");
+		printf("Failed to create output.\n");
 		input.close();
 		output.close();
 		return false;
